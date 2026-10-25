@@ -2,6 +2,7 @@
 metanorma:
   source:
     files:
+      - core/standard/20-058.adoc
       - metanorma/ogcapi-maps/document.adoc
 
   collection:
