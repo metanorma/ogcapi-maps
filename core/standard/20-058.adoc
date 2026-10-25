@@ -1,33 +1,17 @@
-= OGC API - Maps - Part 1: Core
+= OGC API - Maps
 :doctype: standard
-:encoding: utf-8
-:lang: en
+:docsubtype: implementation
+:edition: 1.0
+:language: en
 :status: draft
 :committee: technical
-:draft: 3.0
-:external-id: http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}
 :docnumber: 20-058
-:received-date: 2024-02-15
-:issued-date: 2029-03-30
-:published-date: 2029-03-30
-:fullname: Joan Masó
-:fullname_2: Jérôme Jacovella-St-Louis
-:docsubtype: Interface
-:keywords: ogcdoc, OGC document, API, openapi, maps
-:submitting-organizations: Universitat Autònoma de Barcelona (CREAF); US Army Geospatial Center; Ecere Corporation; Esri
+:received-date: 2026-10-25
+:issued-date: 2026-10-25
+:fullname: Open Geospatial Consortium
+:organization: Open Geospatial Consortium
 :mn-document-class: ogc
-:mn-output-extensions: xml,html,doc,pdf
-:local-cache-only:
-:data-uri-image:
-:pdf-uri: ./document.pdf
-:xml-uri: ./document.xml
-:doc-uri: ./document.doc
-:edition: 1.0
-:xrefstyle: basic
 
-////
-Make sure to complete each included document
-////
 include::clause_0_front_material.adoc[]
 
 include::clause_1_scope.adoc[]
