@@ -88,11 +88,14 @@ components:
         links.
     collectionDesc:
       $ref: schemas/common-geodata/collectionDesc.yaml
+      description: A description of a collection that hosts the results or data of the API.
     extent:
       $ref: schemas/common-geodata/extent.yaml
       description: The spatial and temporal extent of a collection or deployment.
     extent-uad:
       $ref: schemas/common-geodata/extent-uad.yaml
+      description: An extent with unknown, unlimited or multi-dimensional axes, per the OGC Unbounded
+        Axis Description extension.
     crs:
       $ref: schemas/common-geodata/crs.yaml
       description: The coordinate reference systems supported for spatial inputs and outputs.
@@ -110,18 +113,30 @@ components:
       description: The number of items matching the selection criteria, if the server can determine it.
     tileSet:
       $ref: schemas/tms/tileSet.yaml
+      description: 'A tileset: a set of tiles of a collection in a specific tile matrix set and media
+        type.'
     tileSet-item:
       $ref: schemas/tms/tileSet-item.yaml
+      description: One tileset of a collection, with its tile matrix set reference, media type and template
+        link.
     tileMatrixSet:
       $ref: schemas/tms/tileMatrixSet.yaml
+      description: 'A tile matrix set: the definition of the tiling scheme (crs, tile matrices, their
+        scales and matrix dimensions).'
     tileMatrixSet-item:
       $ref: schemas/tms/tileMatrixSet-item.yaml
+      description: 'A subset of a tile matrix set definition: its identifier, URI, crs and supported tile
+        matrices.'
     tileMatrixLimits:
       $ref: schemas/tms/tileMatrixLimits.yaml
+      description: 'The limits of a tile matrix: the tile row and column ranges available for a collection.'
     2DPoint:
       $ref: schemas/tms/2DPoint.yaml
+      description: A two-dimensional point with x and y coordinates.
     2DBoundingBox:
       $ref: schemas/tms/2DBoundingBox.yaml
+      description: 'A two-dimensional bounding box: lower-left and upper-right corners with the coordinate
+        reference system.'
     enumeration:
       $ref: schemas/dynamic/enumeration.yaml
       description: An input whose value must be one of an enumerated set of literals.
@@ -130,8 +145,11 @@ components:
       description: A list of all collections available on this API, across all collection types.
     styles:
       $ref: schemas/dynamic/styles.yaml
+      description: A list of the styles available for rendering the maps of this API.
     tileMatrixSets:
       $ref: schemas/dynamic/tileMatrixSets.yaml
+      description: A list of the tile matrix sets supported by this API, per the OGC Two-Dimensional Tile
+        Matrix Set standard.
   parameters:
     f-metadata:
       $ref: parameters/unspecified/f-metadata.yaml
